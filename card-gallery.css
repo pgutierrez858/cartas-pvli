@@ -27,11 +27,11 @@ body {
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(6, 200px);
   gap: 10px;
-  justify-content: center;
+  justify-content: flex-start;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 .card {
   background: white;
