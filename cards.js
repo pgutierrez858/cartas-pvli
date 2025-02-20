@@ -1308,6 +1308,76 @@ export const cards = [
       "https://thomaskinkade.com/cdn/shop/collections/Harry_Potter__Hogwarts__Castle.jpg?v=1708955739",
     artist: "a24",
   },
+  {
+    color: "orange",
+    name: "Navi Cuántica",
+    type: "Cuántica",
+  },
+  {
+    color: "orange",
+    name: "Invocación Cuántica",
+    type: "Cuántica",
+  },
+  {
+    color: "orange",
+    name: "Pasado Cuántico",
+    type: "Cuántica",
+  },
+  {
+    color: "orange",
+    name: "Universo Cuántico",
+    type: "Cuántica",
+  },
+  {
+    color: "gray",
+    name: "Drawn to Card",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "El Pasado",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Emociones Reprimidas",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Limit Break",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Mago del Tiempo",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Mago Oscuro",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Maracas de Insignias",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Marcha Espectral",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Persona 3",
+    type: "Etérea",
+  },
+  {
+    color: "gray",
+    name: "Tráfico de Nabos",
+    type: "Etérea",
+  },
 ];
 
 export default cards;

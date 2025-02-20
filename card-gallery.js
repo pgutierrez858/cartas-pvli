@@ -24,6 +24,12 @@ function buildCardPath(card) {
     case "blue":
       path = "mecánicas";
       break;
+    case "orange":
+      path = "cuánticas";
+      break;
+    case "gray":
+      path = "etéreas";
+      break;
     default:
       break;
   }
@@ -42,7 +48,9 @@ function filterByType(type) {
 }
 
 function filterCards(txt) {
-  const filtered = cards.filter((card) => card.name.toLowerCase().includes(txt));
+  const filtered = cards.filter((card) =>
+    card.name.toLowerCase().includes(txt)
+  );
   displayCards(filtered);
 }
 

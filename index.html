@@ -14,11 +14,11 @@
 	</h2>
 	<div class="search-panel">
 		<div class="controls">
-			<img class="category" src="./img/icons/blue.png" onclick="filterByType('Mecánica')"></img>
-			<img class="category" src="./img/icons/red.png" onclick="filterByType('Personaje')"></img>
-			<img class="category" src="./img/icons/green.png" onclick="filterByType('Ambientación')"></img>
-			<img class="category" src="./img/icons/orange.png" onclick="filterByType('Cuántica')"></img>
-			<img class="category" src="./img/icons/gray.png" onclick="filterByType('Etérea')"></img>
+			<img class="category" alt="Mecánicas" src="./img/icons/blue.png" onclick="filterByType('Mecánica')"></img>
+			<img class="category" alt="Personajes" src="./img/icons/red.png" onclick="filterByType('Personaje')"></img>
+			<img class="category" alt="Ambientaciones" src="./img/icons/green.png" onclick="filterByType('Ambientación')"></img>
+			<img class="category" alt="Cuánticas" src="./img/icons/orange.png" onclick="filterByType('Cuántica')"></img>
+			<img class="category" alt="Etéreas" src="./img/icons/gray.png" onclick="filterByType('Etérea')"></img>
 		</div>
 		<div class="searchbox">
 		  <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -41,5 +41,23 @@
         <img id="popupImg" src="" alt="Zoomed Card">
     </div>
     <script type="module" src="./card-gallery.js"></script>
+		<script>
+			function updateCounter(value) {
+					const digits = document.querySelectorAll('.digit span');
+					const formattedValue = String(value).padStart(3, '0');
+					
+					digits.forEach((digit, index) => {
+							const newValue = formattedValue[index];
+							digit.style.transform = `translateY(-${newValue * 60}px)`;
+							digit.textContent = newValue;
+					});
+			}
+			
+			let counterValue = 0;
+			setInterval(() => {
+					counterValue = (counterValue + 1) % 1000;
+					updateCounter(counterValue);
+			}, 2000);
+	</script>
 </body>
 </html>
