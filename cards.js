@@ -507,6 +507,16 @@ export const cards = [
     artist: "m39",
   },
   {
+    color: "blue",
+    name: "Tarjetas de Memoria",
+    type: "Mecánica",
+  },
+  {
+    color: "blue",
+    name: "Skins",
+    type: "Mecánica",
+  },
+  {
     color: "red",
     name: "Nutria con Sombrero",
     type: "Personaje * Animal",
@@ -1377,7 +1387,7 @@ export const cards = [
     color: "gray",
     name: "Tráfico de Nabos",
     type: "Etérea",
-  },
+  }
 ];
 
 export default cards;
